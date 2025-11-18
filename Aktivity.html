@@ -3,274 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projek</title>
-  <style>
-    * {
+    <title>Aktivity Projek</title>
+    <style>
+        * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif\;
+    box-sizing: 0;
+   font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #fff;
-    color: #222;
-    line-height: 1.6;
+    background: #fff;
+    columns: #333;
+  }
+
+  header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  top: 0;
 }
 
-header {
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f97316; 
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+  nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 60px;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0 2px 6px;
-    position: sticky;
-    top: 0;
+    gap: 20px;
+  }
+
+.nav-menu,
+.nav-profile {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav img {
+  width: 18px;
+  height: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f97316;
 }
 
 .logo {
     display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 16px;
-    color: #f9f9f9;
-}
-
-.logo img {
-    width: 28px;
-    height: 28px;
-    margin-right: 8px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.nav-menu,
-.profile {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav li {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-nav img {
-    width: 18px;
-    height: 18px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-nav a:hover {
-   color: #f97316;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.hero .description {
-    color: #555;
-    font-size: 16px;
-    max-width: 650px;
-    margin: 0 auto 30 px;
-}
-
-.search-container {
-    display: flex;
+    align-items: left;
     gap: 10px;
+    font-weight: 600;
+    color: #ff7f27;
+}
+
+.olahraga {
+    display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
-
-.search-box {
-    background-color: #f9f9f9;
-    color: white;
-    border: darkblue;
-    border-radius: 6px;
-}
-
-.search-button {
-    background-color: #f9f9f9;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-}
-
-.trending {
-    padding: 40px 80px;
-}
-
-.trending h2 {
-    margin-bottom: 25px;
-}
-
-.card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    padding: 20;
-}
-
+    
 .olahraga-card {
     text-align: center;
-    padding: 30px;
-    background: #fff;
-    margin: 30px auto;
-    width: 350px;
+    border: 2px solid #e6e1fc;
+    padding: 40px;
     border-radius: 12px;
+    width: 350px;
+    background: #f9f9ff;
 }
 
-.ply-btn {
-    margin-top: 10px;
-    background: none;
-    border: none;
+.olahraga h1 {
+    font-size: 60px;
+    color: #ff7f27;
+    margin-bottom: 5px;
+}
+
+.olahraga-card p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.olahraga h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .card-section {
-    display: flex;
-    justify-content: center;
-    gap: 20;
-    margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.card-section .card {
-    width: 180px;
-    text-align: center;
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px 40px;
+  text-align: center;
+  width: 260px;
+}
+
+.card:hover {
+  transition: translateY(-5px);
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
 }
 
 .graph {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.graph-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .graph-img img {
-    width: 250px;
-    margin: 0 10px;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
 }
-  </style>
+
+ footer{
+    background-color: #f97316;
+    color: #fff;
+    text-align: center;
+    padding: 21px 0;
+    font-size: 0.9rem;
+  } 
+
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="love.png" alt="">
+            <img src="favorite_80dp_F17909_FILL0_wght400_GRAD0_opsz48.png" alt="">
             <span>HIDUP SEHAT</span>
         </div>
 
         <nav>
             <ul class="nav-menu">
-                <li><a href=""></a><img src="dashboard.png" alt="">Dasboard</li>
-                <li><img src="exercise.png" alt="">Latihan</li>
-                <li><img src="serach.png" alt="">Search</li>
-                <li><img src="weather.png" alt="">Cuaca</li>
-                <li><img src="maps.png" alt="">Maps</li>
+                <li><img src="dashboard.png" alt=""><a href="dashboard">Dasboard</a></li>
+                <li><img src="exercise.png" alt=""><a href="exercise">Latihan</a></li>
+                <li><img src="serach.png" alt=""><a href="search">Search</a></li>
+                <li><img src="weather.png" alt=""><a href="weather">Weather</a></li>
+                <li><img src="maps.png" alt=""><a href="maps">Maps</a></li>
             </ul>
-
             <ul class="profile">
-                <li><img src="profil.png" alt="">Profile</li>
+                <li><img src="profil.png" alt=""><a href="profile">Profile</a></li>
             </ul>
         </nav>
     </header>
-
-    <main id="search" class="page active">
-        <section class="hero">
-            <h1>Mulai perjalanan sehatmu Hari ini</h1>
-            <p class="description">
-                Jelajahi berbagai konten kebugaran, resep sehat, dan tips dari para ahli.
-            </p>
-            <div class="search-container">
-                <input type="text" class="search-box" placeholder="Search for fitness content, workouts, recipes">
-                <button class="search-button">Search</button>
-            </div>
-        </section>
-        <section class="trending">
-            <h2>Sedang Populer</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="book.png" alt="">
-                    <h4>Jadwal Olahraga</h4>
-                    <p>Buat jadwal latihan yang tepat</p>
-                </div>
-                <div class="card">
-                    <img src="exercise.png" alt="">
-                    <h4>Latihan Populer</h4>
-                    <p>Jelejahi berbagai rutinitas olahraga paling efektif untuk meningkatkan performa Anda</p>
-                </div>
-                <div class="card">
-                    <img src="sprint.png" alt="">
-                    <h4>Komunitas Pelari</h4>
-                    <p>Berinteraksi dengan pelari di sekitar anda</p>
-                </div>
-                <div class="card">
-                    <img src="dinning.png" alt="">
-                    <h4>Rekomendasi Makanan</h4>
-                    <p>Temukan berbagai makanan bergizi tinggi protein dengan harga terjangkau</p>
-                </div>
-                <div class="card">
-                    <img src="sleep.png" alt="">
-                    <h4>Jadwal Istirahat</h4>
-                    <p>Kelola waktu istirahat anda agar energi dan fokus tetap maksimal setip hari</p>
-                </div>
-                <div class="card">
-                    <img src="grid view.png" alt="">
-                    <h4>Lainnya</h4>
-                    <p>Temukan aktivitas menarik lainnya</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
     <main>
         <section class="olahraga">
-            <div class="card">
+            <div class="olahraga-card">
                 <h2>Durasi Olahraga</h2>
                 <h1>6.1 km</h1>
                 <p>Total berjalan kaki</p>
-                <span>Waktu saat ini</span>
+                <span>Waktu Saat ini</span>
                 <h3>00.00</h3>
                 <button class="ply-btn"><img src="play_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
             </div>
         </section>
+        
         <section class="card-section">
             <div class="card">
                 <img src="hearth2.png" alt="">
                 <h4>Detak Jantung</h4>
-                <p>Jaga detak jantungmu tetap sehat</p>
+                <p>Jaga jantungmu tetap sehat</p>
             </div>
+            
             <div class="card">
                 <img src="api.png" alt="">
-                <h4>Kalori Terbakar</h4>
-                <p>Jantung Sehat, Kalori terbakar</p>
+                <h4>Kalori</h4>
+                <p>Jantung sehat, Energi terbakar</p>
             </div>
         </section>
+
         <section class="graph">
             <div class="graph-img">
-                <img src="grafik.png" alt="">
-                <img src="grafik.png" alt="">
+            <img src="grafik.png" alt="grafik 1">
+            <img src="grafik.png" alt="grafik 2">
             </div>
         </section>
     </main>
+    <footer>
+        <p>©2025 Kelompok 8</p>
+    </footer>
 </body>
 </html>
