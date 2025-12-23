@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #ffffff;
+    position: sticky;
+    z-index: 100%;
+    top: 0;  
+}
+
+header img {
+    height: 80px;
+    border-radius: 100px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff7a28;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav img {
+    height: 17px;
+    border-radius: 0;
+}
+
+
+nav a {
+    text-decoration: none;
+    color:#555;
+    font-weight: bold;
+}
+
+nav a :hover {
+    color: #ff7a28;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.user-actions img {
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+.dashboard {
+  max-width: 1500px;   /* lebar area dashboard */
+  margin: 40px auto;   /* MEMBUAT SEMUA CARD KE TENGAH */
+  padding: 0 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  max-width: 1500px;
+  margin-bottom: 24px;
+}
+
+/* Judul */
+.durasi-tidur h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+/* Tanggal */
+.durasi-tidur .tanggal {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* Angka durasi besar */
+.durasi {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ff7a00;
+  margin-bottom: 12px;
+}
+
+.durasi span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff7a00;
+}
+
+/* Keterangan */
+.keterangan {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Container list */
+.fase-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fase-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fase-list li:last-child {
+  border-bottom: none;
+}
+
+/* Wrapper icon + text */
+.fase-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icon image */
+.fase-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Label */
+.label {
+  font-size: 15px;
+  color: #374151;
+}
+
+/* Waktu */
+.waktu {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.sesi-tidur {
+  max-width: 1500px;
+}
+
+/* List */
+.sesi-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.sesi-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sesi-list li:last-child {
+  border-bottom: none;
+}
+
+/* Info kiri */
+.sesi-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sesi-info .tanggal {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.sesi-info .durasi {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Badge status */
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Warna badge */
+.sangat-baik {
+  background: #e6f6ec;
+  color: #16a34a;
+}
+
+.baik {
+  background: #fff4e5;
+  color: #f97316;
+}
+
+.cukup {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* Tombol */
+.btn-riwayat {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-riwayat:hover {
+  background: #f9fafb;
+}
+
+footer {
+    background-color: #e56a1b;
+    color: #ffffff;
+    padding: 20px; 
+    text-align: center; 
+    font-size: 12px;
+}
