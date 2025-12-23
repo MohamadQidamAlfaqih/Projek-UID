@@ -13,12 +13,10 @@ header {
   background-color: #fff;
   border-bottom: 3px solid #eee;
 }
-
 header img {
   height: 50px;
   border-radius: 100px;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -26,29 +24,24 @@ header img {
   font-weight: 700;
   color: #ff7a28;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   gap: 50px;
 }
-
 nav img {
   height: 21px;
 }
-
 nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
-
 .user-actions img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
 
 .hero {
   text-align: center;

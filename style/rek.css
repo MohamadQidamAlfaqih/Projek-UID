@@ -1,42 +1,42 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0; /*--jarak di luar--*/
-  padding: 0; /*--jarak di dalam--*/
-  background-color: #ffffff;  /*--warna latar belakang--*/
-  color: #333; /*--semua warna teks--*/ 
+  margin: 0; 
+  padding: 0; 
+  background-color: #ffffff; 
+  color: #333; 
 }
 
 header {
-  display: flex; /*eleemen nafbar sejajar dan horizontal*/
-  justify-content: space-between; /*mengatur jarak kiri dan kanan elemen--*/
-  padding: 15px 60px; /*--jarak vertikal(ats & bwh) dan horizontal(kri & knn)--*/
-  background-color: #fff; /*--warna latar belakang pada navbar--*/
-  border-bottom: 3px solid #eee;  /*ketebalan  garis border terlihat jelas dan berwarna putih*/
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background-color: #fff;
+  border-bottom: 3px solid #eee;
 }
 header img {
   height: 50px;
   border-radius: 100px;
 }
 .logo {
-  display: flex;  /*membuat elemen teks menjadi fleksibel dan tersusun rapi dalam satu baris*/
-  align-items: center; /*mengatur posisi elemen di tengah*/
+  display: flex;  
+  align-items: center; 
   font-size: 20px;
-  font-weight: 700;   /*ketebalan tulisan--*/
+  font-weight: 700; 
   color: #ff7a28;
 }
 
 nav ul {
-  list-style: none; /*--menghilangkan bullet pada list--*/
-  display: flex;    /*eleemen nafbar sejajar dan horizontal*/
-  gap: 50px;      /*--jarak antar menu--*/
+  list-style: none; 
+  display: flex;   
+  gap: 50px;      
 }
 nav img {
   height: 21px; 
 }
 nav a {
-  text-decoration: none;  /*--menghilangkan garis bawah pada link--*/
+  text-decoration: none;
   color: #333;
-  font-weight: bold;  /*--ketebalan teks--*/
+  font-weight: bold; 
 }
 .user-actions img {
   width: 50px;
