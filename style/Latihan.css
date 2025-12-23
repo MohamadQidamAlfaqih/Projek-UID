@@ -1,209 +1,141 @@
 body {
-  /*--penampung utama semua elemen--*/
   font-family: Arial, sans-serif;
   margin: 0;
-  /*--jarak di luar--*/
   padding: 0;
-  /*--jaraak di dalam--*/
-  box-sizing: border-box;
-  /*--ukuran tetap stabil--*/
-  background-color: white;
-  color: #333;
-  /*--text agar berwarna--*/
-}
-header {
-  /*--navbar--*/
-  display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
-  justify-content: space-between;
-  /*--mengatur elemen di ratakan(kiri & kanan nempel tepi--*/
-  align-items: center;
-  /*--mengatur psisi elemen di tgh--*/
-  padding: 15px 60px;
-  /*--masing2 vertikal(ats & bwh) dan horizontal(kri & knn) mempunyai px--*/
   background-color: #ffffff;
-  /*-warna latar blkng pada navbar--*/
-  border-bottom: 3px solid #eee;
-  /*--garis di bwh dan terlihat (solid)--*/
+  color: #333;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background-color: #fff;
+  border-bottom: 3px solid #eee;
+}
+
 header img {
-  /*--logo--*/
   height: 50px;
   border-radius: 100px;
-  /*--sudud bisa melengkung--*/
 }
+
 .logo {
-  /*--text Hidup sehat--*/
-  font-size: 20px;
-  /*--menentukan sbrpa teks di tmplkan--*/
-  font-weight: 700;
-  /*--ketebalan tulisan--*/
-  color: #ff7a28;
   display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
   align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff7a28;
 }
+
 nav ul {
-  /*--Mengatur tampilan list--*/
   list-style: none;
-  /*--list tanpa bullet--*/
   display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
   gap: 50px;
-  /*--jarak antar menu--*/
 }
+
 nav img {
-  /*--Mengatur ukuran logo menu--*/
-  height: 20px;
-  /*--tinggi logo menu--*/
-  border-radius: 0;
-  /*--sudud bisa melengkung--*/
+  height: 21px;
 }
+
 nav a {
-  /*--mengatur menu home dll--*/
   text-decoration: none;
-  /*--menhilangkan dekorasi teks--*/
   color: #333;
-  ;
   font-weight: bold;
-  /*--ketebalan teks--*/
 }
+
 .user-actions img {
-  /*--profile--*/
-  height: 50px;
   width: 50px;
+  height: 50px;
   border-radius: 50%;
-  /*--sudud bisa melingkar--*/
 }
 
 
-.olahraga {
-  /*--stopwatch--*/
-  display: flex;
-  /*--agar horizontal/vertikal--*/
-  justify-content: center;
-  /*--mengatur posisi elemen di dlm secara horizontal --*/
-  margin-top: 40px;
-  /*--jarak atas--*/
-}
-
-.olahraga-card {
-  /*--mengatur di dalam kotak--*/
+.hero {
   text-align: center;
-  /*--menyusun text di tgh--*/
-  border: 2px solid #f97316;
-  /*--memberi garis pinggir, garis penuh dan warna--*/
-  padding: 20px;
-  /*--beri jarak dalam--*/
-  border-radius: 12px;
-  /*--garis tepi--*/
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.description {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+  line-height: 1.6;
+}
+.olahraga {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.olahraga-card {
   width: 500px;
   height: 350px;
+  text-align: center;
+  border: 2px solid #f97316;
+  border-radius: 14px;
   background: #f9f9f9;
+  padding: 20px;
 }
-
 .olahraga h1 {
-  /*--judul dalam--*/
   font-size: 60px;
-  color: #ff7f27;
-  margin-bottom: 5px;
-  /*--beri jarak bawah--*/
+  color: #ff7a28;
 }
-
-.olahraga-card p {
-  /*--teks paragraf dalam card--*/
-  color: #111;
-  margin-bottom: 1px;
-  /*--jarak waktu ke bwh --*/
+.play-btn {
+  border: none;
+  background: none;
 }
-
-.olahraga h3 {
-  font-size: 20px;
-  /*--teks 00.00--*/
-  margin-bottom: 20px;
-  /*--gambar play--*/
-}
-
 
 .card-section {
   display: flex;
   justify-content: center;
-  /*--posisi card di tgh--*/
+  gap: 30px;
   margin-top: 100px;
-  /*--jarak antara card detak jntg dan card olahraga--*/
-  gap: 33px;
-  /*--jarak antara card--*/
 }
-
-.card {
+.card-link {
+  display: block;
+  width: 280px;
+  padding: 30px;
   background: #fff;
-  border: 4px solid #eee;
-  /*--solid ada garis border nya--*/
-  border-radius: 20px;
-  /*--card garis melengkung--*/
-  padding: 30px 40px;
-  /*--masing2 vertikal(ats & bwh) dan horizontal(kri & knn) mempunyai px--*/
+  border-radius: 18px;
+  border: 3px solid #eee;
   text-align: center;
-  /*--teks dalam card akan ke tgh--*/
-  width: 300px;
-  /*--lebar card--*/
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  /*--ada efek animasi di card--*/
-}
-
-.card img {
-  width: 40px;
-  height: 40px;
-}
-
-.card h4 {
-  /*--teks h4--*/
-  font-size: 18px;
+  text-decoration: none;
   color: #111;
 }
-
-.card p {
+.card-link img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+.card-link h4 {
+  font-size: 18px;
+}
+.card-link p {
   color: #555;
 }
-
-
 .graph {
   display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
   justify-content: center;
-  /*--posisi grafik di tgh--*/
-  margin-top: 140px;
-  /*--jarak atas--*/
-  margin-bottom: 190px;
-  /*--jarak bwh--*/
+  margin: 140px 0;
 }
-
 .graph-img {
   display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
-  justify-content: center;
-  /*--posisi grafik--*/
-  gap: 78px;
-  /*--jarak antar card--*/
+  gap: 90px;
 }
-
 .graph-img img {
   width: 600px;
+  border-radius: 12px;
   border: 4px solid #eee;
-  /*--solid(menampilkan garis border--*/
-  border-radius: 10px;
 }
 
-
 footer {
-  background-color: #f97316;
+  display: flex;
+  background: #ff7a28;
+  justify-content: space-between;
+  padding: 35px;
   color: #fff;
-  text-align: center;
-  /*--teks akan di tgh--*/
-  padding: 20px;
-  /*--jarak dalam--*/
-  font-size: 12px;
+  font-size: 14px;
+  margin-top: 80px;
 }

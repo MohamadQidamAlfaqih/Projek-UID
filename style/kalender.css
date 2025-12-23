@@ -1,125 +1,93 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  /*--jarak di luar--*/
-  padding: 0;
-  /*--jarak di luar--*/
-  box-sizing: border-box;
-  /*--ukuran tetap stabil--*/
-  background-color: white;
+  margin: 0; 
+  padding: 0; 
+  background-color: #ffffff;  
   color: #333;
 }
+
 header {
-  /*--navbar--*/
   display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
   justify-content: space-between;
-  /*--mengatur elemen di ratakan(kiri & kanan nempel tepi--*/
-  align-items: center;
-  /*--mengatur psisi elemen di tgh--*/
   padding: 15px 60px;
-  /*--masing2 vertikal(ats & bwh) dan horizontal(kri & knn) mempunyai px--*/
-  background-color: #ffffff;
-  /*-warna latar blkng pada navbar--*/
-  border-bottom: 3px solid #eee;
-  /*--garis di bwh dan terlihat (solid)--*/
+  background-color: #fff; 
+  border-bottom: 3px solid #eee;  
 }
 header img {
-  /*--logo--*/
   height: 50px;
   border-radius: 100px;
-  /*--sudud bisa melengkung--*/
 }
 .logo {
-  /*--text Hidup sehat--*/
+  display: flex; 
+  align-items: center; 
   font-size: 20px;
-  /*--menentukan sbrpa teks di tmplkan--*/
-  font-weight: 700;
-  /*--ketebalan tulisan--*/
+  font-weight: 700;  
   color: #ff7a28;
-  display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
-  align-items: center;
 }
+
 nav ul {
-  /*--Mengatur tampilan list--*/
   list-style: none;
-  /*--list tanpa bullet--*/
-  display: flex;
-  /*--posisi seperti navbar/card baris teratur--*/
-  gap: 50px;
-  /*--jarak antar menu--*/
+  display: flex;   
+  gap: 50px;    
 }
 nav img {
-  /*--Mengatur ukuran logo menu--*/
-  height: 20px;
-  /*--tinggi logo menu--*/
-  border-radius: 0px;
-  /*--sudud bisa melengkung--*/
+  height: 21px; 
 }
 nav a {
-  /*--mengatur menu home dll--*/
-  text-decoration: none;
-  /*--menhilangkan dekorasi teks--*/
+  text-decoration: none; 
   color: #333;
-  ;
-  font-weight: bold;
-  /*--ketebalan teks--*/
+  font-weight: bold; 
 }
 .user-actions img {
-  /*--profile--*/
-  height: 50px;
   width: 50px;
+  height: 50px;
   border-radius: 50%;
-  /*--sudud bisa melingkar--*/
 }
 
-
 .calender {
-  margin: 100px auto;
-  max-width: 800px;
-  font-family: serif;
-  font-weight: bold;
-  color: black;
-  padding: 20px;
+  margin: 100px auto;  
+  max-width: 900px;   
+  font-family: sans-serif;
+  font-weight: bold;      
+  color: #111;
+  padding: 50px;  
 }
 .month {
   text-align: center;
-  background: #ffffff;
+  background: #555;
   font-size: 80px;
-  letter-spacing: 1px;
-  color: black;
-  border: 2px solid blue;
+  color: #fff;
+  border: 3px solid #111;
 }
 table, th, td {
   width: 100%;
-  table-layout: fixed;
+  table-layout: fixed; 
   text-align: center;
   font-size: 27px;
-  border-collapse: collapse;
-  border: 5px solid black;
-  font-family: Elaphont;
+  border-collapse: collapse;   /*-menggabungkan garis border-*/
+  border: 3px solid #111;  
 }
 tr, th, td {
-  padding: 15px;
+  padding: 15px; 
 }
 th {
-  background: red;
-  color: white;
+  background: rgb(248, 155, 5);
+  color: #111;
   font-family: arial black;
 }
 td {
-  background-color: white;
+  background-color: #fff;
 }
 td:hover {
-  background: green;
+  background: rgb(241, 245, 6);
 }
+
 footer {
-  background-color: #f97316;
+  display: flex;
+  background: #ff7a28;
+  justify-content: space-between;
+  padding: 35px;
   color: #fff;
-  text-align: center;
-  margin-top: 100px;
-  /*-Jarak atas card dan footer-*/
-  padding: 20px;
-  font-size: 12px;
+  font-size: 14px;
+  margin-top: 80px;
 }

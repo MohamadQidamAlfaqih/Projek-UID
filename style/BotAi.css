@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 3px solid #eee;
+}
+
+header img {
+    height: 50px;
+    border-radius: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff7a28;
+    gap: 10px;
+}
+
+.user-actions img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+    height: 90vh;   /*-tinggi layar-*/
+}
+
+.sidebar-left {
+    width: 160px;
+    background: #f9f9f9;
+    color: #111;
+    padding: 15px;
+}
+
+.sidebar-left ul {
+    list-style: none;
+    padding: 15px;
+}
+.sidebar-left ul li {
+    line-height: 2.2;
+}
+
+.chat-area {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.chat {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.chat.bot {
+    background: #3498db;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.chat.user {
+    background: #2ecc71;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.input-area {
+    display: flex;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.input-area button {
+    padding: 15px 15px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #3498db;
+    color: #fff;
+}
